@@ -21,9 +21,14 @@ var app = new Vue(
                 if (this.imageIndex == -1 ) {
                     this.imageIndex = this.images.length -1
                 }
-            }
-        }   
+            },
+            
+        },
+        mounted: function() {
+            setInterval(this.nextImage, 3000);
+        } 
     }   
 )
 
 // Gestire il cambio dell'immagine al click sui pallini in basso (nav);
+// Applicare l'auto-play allo slider: ogni 3 secondi, cambia immagine automaticamente.
