@@ -25,3 +25,5 @@ var app = new Vue(
         }   
     }   
 )
+
+// Gestire il cambio dell'immagine al click sui pallini in basso (nav);

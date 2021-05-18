@@ -16,7 +16,7 @@
                     <i class="fas fa-chevron-circle-left" @click="prevImage"></i>
                 </div>
                 <div class="slide">
-                    <img :src="images[imageIndex]" alt="">
+                    <img :src="images[imageIndex]" alt="one piece wallpaper">
                 </div>
                 <div class="nextview">
                     <i class="fas fa-chevron-circle-right" @click="nextImage"></i>
@@ -24,7 +24,8 @@
                 <div class="img-index">
                     <i v-for="(image, index) in images"
                     :class="(index == imageIndex) ? 'fas' : 'far'"
-                    class="fa-circle"></i>
+                    class="fa-circle"
+                    @click="imageIndex = index"></i>
                 </div>
             </div>
         </div>
